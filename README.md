@@ -1,5 +1,9 @@
 # Stable Diffusion WebUI Docker
 
+original by AbdBarho but that one is stale. So continuing with extensions as I require them:
+
+
+
 Run Stable Diffusion on your machine with a nice UI without any hassle!
 
 ## Setup & Usage
