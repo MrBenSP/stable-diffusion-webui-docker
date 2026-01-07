@@ -2,7 +2,13 @@
 
 original by AbdBarho but that one is stale. So continuing with extensions as I require them:
 
-
+- A1111: Change dockerfile StableDiffusion repository URL
+- A1111: Switch base image to pytorch/pytorch:2.9.1-cuda12.8-cudnn9-runtime for 5090 support
+- A1111: Update to latest version
+- A1111: Force xformers 0.0.33.post2 (not used but at least its updated)
+- Comfy: Switch base image to pytorch/pytorch:2.9.1-cuda12.8-cudnn9-runtime for 5090 support
+- Comfy: Update to latest version
+- Comfy: Adding Comfy-Manager
 
 Run Stable Diffusion on your machine with a nice UI without any hassle!
 
