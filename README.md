@@ -9,6 +9,7 @@ original by AbdBarho but that one is stale. So continuing with extensions as I r
 - Comfy: Switch base image to pytorch/pytorch:2.9.1-cuda12.8-cudnn9-runtime for 5090 support
 - Comfy: Update to latest version
 - Comfy: Adding Comfy-Manager
+- Forge: Adding ForgeNeo service with name 'forge'
 
 Run Stable Diffusion on your machine with a nice UI without any hassle!
 
