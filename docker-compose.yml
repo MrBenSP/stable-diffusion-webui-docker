@@ -23,13 +23,25 @@ services:
     volumes:
       - *v1
 
+  forge: &forge
+    <<: *base_service
+    profiles: ["forge"]
+    build: ./services/Forge
+    image: sd-forge:11
+    environment:
+      - CLI_ARGS=--enable-insecure-extension-access --api --cuda-malloc
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - NVIDIA_VISIBLE_DEVICES=all
+
   auto: &automatic
     <<: *base_service
     profiles: ["auto"]
     build: ./services/AUTOMATIC1111
     image: sd-auto:78
     environment:
-      - CLI_ARGS=--allow-code --medvram --xformers --enable-insecure-extension-access --api
+      - CLI_ARGS=--allow-code --medvram --enable-insecure-extension-access --api 
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - NVIDIA_VISIBLE_DEVICES=all
 
   auto-cpu:
     <<: *automatic
